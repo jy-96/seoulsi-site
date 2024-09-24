@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+@import './reset.css';
+@import './common.css';
+
+
+.group-top {
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+.group-top .logo {
+    display: block;
+    width: 105px;
+    height: 27px;
+    background: url('https://www.seoul.go.kr/res_newseoul/images/icon_set_common.png') no-repeat -5px -165px;
+    margin-top: -10px;
+    margin-right: 60px;
+}
+
+nav {
+    margin-right: auto;
+}
+nav .gnb-list {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.util-area {
+    font-size: 14px;
+    font-weight: bold;
+}
+.util-area .util-list{
+    display: flex;
+    gap: 17px;
+}
+
+
+.group-bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+.group-bottom h1 {
+    margin-top: 38px;
+    margin-bottom: 30px;
+}
+.group-bottom .slogun-area a {
+    display: block;
+    width: 133px;
+    height: 51px;
+    background: url('https://www.seoul.go.kr/res_newseoul/images/common/seoul-slogan.png') no-repeat;
+}
+.group-bottom .search-area {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 257px;
+    width: 520px;
+    height: 42px;
+    border: 3px solid #2292e9;
+}
+ .search-area input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 10px;
+}
+.search-area form,
+.search-area fieldset {
+    height: 100%;
+}
+.search-area fieldset {
+    /* 반드시 필요하다 */
+    border: 0; 
+} 
+.search-area .btn-search {
+    position: absolute;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    background: url(https://www.seoul.go.kr/res_newseoul/images/icon_set_common.png) no-repeat;
+    background-position: -32px -97px;
+}
+ .weather-area {
+    width: 290px;
+    height: 85px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+ .weather-area .weather-layer {
+    position: absolute;
+}
+ .weather-area img {
+    float: left;
+}
+ .weather-area .desc-wrap {
+    float: left;
+    /*? 마진이 위로 떠버려서 마진자체가 적용이 안된다 float때문인가..?(하지만 margin-top은 또 된다)*/
+    /* margin-bottom: 100px;  */
+}
+ .weather-area .weather-text2 {
+    font-size: 13px;
+}
+ .weather-area .weather-text2 em {
+    color: #0D6EFD;
+ }
+ .weather-area strong {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+ .weather-area .text-box {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+ .weather-area .text-box h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+ .weather-area .text-box p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+ .weather-area .btn-close {
+    right: 10px;   
+    top: 10px;
+    position: absolute;
+    background: url('https://www.seoul.go.kr/res_newseoul/images/btn_close_white.png') no-repeat;
+    width: 22px;
+    height: 22px;
+}
+ .group-bottom .lang-area {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 110px;
+    height: 21px;
+}
+ .lang-area select {
+    float: left;
+    width: 80px;
+    height: 21px;
+    font-size: 12px;
+    border-color: #afcfea;
+    color: #1e6cb3;
+    padding: 2px 0;
+}
+.lang-area input[type=button] {
+    margin-left: -1px;
+    float: left;
+    width: 30px;
+    height: 21px;
+    font-size: 11px;
+    background-color: #1E6CB3;
+    color: #fff;
+    border: none;
+}
+.group-inner {
+    display: flex;
+    margin-top: 40px;
+}
+.footer {
+    font-size: 12px;
+    color: #636363;
+}
+.footer-top {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+.footer-top .footer-link {
+    margin-right: auto;
+}
+.footer-top .footer-link ul {
+    display: flex;
+}
+.footer-top .footer-link ul li {
+    position: relative;
+    padding: 0 10px;
+}
+.footer-top .footer-link ul li:first-child::before {
+    display: none;
+}
+.footer-top .footer-link ul li::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 1px;
+    height: 13px;
+    background: #dcdcdc;
+}
+.footer-top .sns-link ul{
+    display: flex;
+    gap: 10px;
+}
+.footer-top .sns-link .facebook {
+    background-position: -25px 0;
+}
+.footer-top .sns-link .twitter {
+    background-position: -50px 0;
+}
+.footer-top .sns-link .instagram{
+    background-position: -75px 0;
+}
+.footer-top .sns-link .kakao{
+    background-position: -100px 0;
+}
+.footer-top .sns-link .youtube{
+    background-position: -125px 0;
+}
+.footer-top .sns-link .blog{
+    background-position: -150px 0;
+}
+
+.footer-bottom {
+    position: relative;
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom .qna-area {
+    width: 108px;
+    height: 45px;
+    background: url('https://www.seoul.go.kr/res_newseoul/images/icon_set_common.png') no-repeat -180px 0;
+}
+.footer-bottom .address {
+    position: absolute;
+    left: 150px;
+}
+.footer-bottom .mark a {
+    display: block;
+    width: 86px;
+    height: 56px;
+    background: url('https://www.seoul.go.kr/res_newseoul/images/footer_mark_wah.png') no-repeat;
+}
+
+
+/* .sns-link ul {}
+.sns-link ul li {} */
+.sns-link ul a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("https://www.seoul.go.kr/res_newseoul/images/main/icon_set_sns.png") no-repeat 0 0;
+    background-position: -150px 0;
+}
