@@ -153,8 +153,8 @@ nav .gnb-list {
     color: #1e6cb3;
     padding: 2px 0;
 }
-.lang-area input[type=button] {
-    margin-left: -1px;
+.lang-area .lang-btn {
+    margin-left: -3px;
     float: left;
     width: 30px;
     height: 21px;
