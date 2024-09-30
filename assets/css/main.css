@@ -67,10 +67,8 @@
     margin-right: 0;
     width: 690px;
 }
-.main-slide .swiper-wrapper{
-}
-.main-slide .swiper-slide {
-}
+.main-slide .swiper-wrapper{}
+.main-slide .swiper-slide {}
 .main-slide .swiper-slide span {
     display: flex;
     align-items: center;
@@ -88,10 +86,11 @@
     width: 690px;
 }
 .main-slide .control {
+    /* border: 1px solid #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    width: 120px;
     height: 40px;
     position: absolute;
     right: 40px;
@@ -99,46 +98,59 @@
     z-index: 2;
 }
 .main-slide .control .fraction {
-    /* position: absolute; */
+    position: absolute;
+    left: 0;
     color: #fff;
 }
-.swiper .prev {
-    /* position: absolute;
-    right: 40px;
-    bottom: 0; */
+.main-slide .btn-wrap {
+    /* border: 1px solid red; */
+    margin-left: auto;
+    position: relative;
+    width: 70px;
+    height: 100%;
+}
+.main-slide .btn-wrap .prev {
+    position: absolute;
+    top: calc(50% + 1px);
+    transform: translateY(-50%);
+    left: 5px;
     width: 18px;
     height: 18px;
-    background: url('https://www.seoul.go.kr/res_newseoul/images/main/icon_set_common_2019.png') no-repeat -244px -285px;
+    background: url('https://www.seoul.go.kr/res_newseoul/images/main/icon_set_common_2019.png') no-repeat;
+    background-position: -244px -285px;
 }
-.swiper .next {
-    /* position: absolute;
-    right: 0;
-    bottom: 0; */
+.main-slide .btn-wrap .next {
+    position: absolute;
+    top: calc(50% + 1px);
+    transform: translateY(-50%);
+    right: 5px;
     width: 18px;
     height: 18px;
-    background: url('https://www.seoul.go.kr/res_newseoul/images/main/icon_set_common_2019.png') no-repeat -256px -285px;
+    background: url('https://www.seoul.go.kr/res_newseoul/images/main/icon_set_common_2019.png') no-repeat;
+    background-position: -256px -285px;
 }
-.swiper .control .autoplay {
+.main-slide .control .autoplay {
+    position: absolute;
+    top: calc(50% + 1px);
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 18px;
     height: 18px;
     /* background-color: #f00; */
     background: url('https://www.seoul.go.kr/res_newseoul/images/main/icon_set_common_2019.png') no-repeat;
     background-position: -285px -285px;
 }
-.swiper .control .autoplay.on {
+.main-slide .control .autoplay.on {
     background-position: -269px -285px;
 }
-.swiper .control .btn-wrap {
-    display: flex;
-    align-items: center;
-}
+
+
 
 
 .mayor .mayor-news a{
     display: block;
     width: 360px;
 }
-
 .mayor .corona-info {
     display: flex;
     justify-content: space-between;
@@ -202,8 +214,6 @@
     font-size: 14px;
     font-weight: bold;
 }
-
-
 .to-mayor {
     position: relative;
     margin-top: 15px;
